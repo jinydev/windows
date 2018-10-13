@@ -1,0 +1,50 @@
+
+<ul class="list-group">
+
+    <li class="list-group-item list-group-item-action active">
+        Windows
+    </li>
+
+    {% for menu in page.submenus %}
+        {% if url == menu.href %}
+        <li class="list-group-item list-group-item-secondary">
+        {% else %}
+        <li class="list-group-item list-group-item-action">
+        {% endif %}
+
+        {% if menu.menu %}
+        <a href="#collapseOne" data-toggle="collapse">{{ menu.name }}</a>
+
+        {% if menu.menu | size %}
+        <span class="badge badge-primary badge-pill">{{menu.menu | size}}</span>
+        {% endif %}
+
+        <ul id="collapseOne" class="collapse">
+            {% for sub in menu.menu %}
+            <li>
+                <a href="{{ sub.href }}">{{ sub.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        {% else %}
+        <a href="{{ menu.href }}">{{ menu.name }}</a>
+        {% endif %}
+
+        </li>
+    {% endfor %}
+
+</ul>
+
+<br>
+<!--구글 좌측광고-->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-3321560028329475"
+     data-ad-slot="7541073160"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
