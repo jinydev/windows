@@ -1,0 +1,12 @@
+title: window
+lang: ko
+email: infohojin@naver.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: infohojin
+github_username:  infohojin@gmail.com
+
+source: src
+destination: docs
+
+github_url: https://github.com/jinydev/windows
