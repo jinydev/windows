@@ -1,4 +1,6 @@
-
+---
+layout: home
+---
 
 https://thecrimson.tistory.com/18
 

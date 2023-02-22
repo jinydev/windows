@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 # wsl
 
 ## wsl GUI 환경
